@@ -91,5 +91,5 @@ Structures are stored as json files, in a `structureTemplates` folder. While run
 ```
 You can assign a structure to a variable like this:
 ```python
-vector3Value = structure Vector3
+vector3Value = structure Vector3>:)
 ```
