@@ -30,7 +30,7 @@ We have a function for throwing errors and halting the programs execution.
 ```python
 uhoh("Error encountered")>:)
 ```
-This function also resets your computer (doesn't work on Arch its too hard)
+This function also resets your computer (doesn't work on Arch it's too hard)
 
 #### Lists
 In Ultilang, lists are called Ultilang Dynamic Sequential Binary Element Catalog Data Type. For the sake of time, we will call then UDSBECDT.
@@ -45,9 +45,30 @@ Ultilang Dynamic Sequential Binary Element Catalog Data Type = (|"dog"0 "cat"1 "
 Numbers are stored using ASCII, so a number is 1 byte per digit.
 ##### What weird languages do:
 ```
-11111111 = 256 -- 1 byte
+11111111 = 255 -- 1 byte
 ```
 ##### What Ultilang does:
 ```
-00110010 00110101 00110110 = 256 -- 3 bytes
+00110010 00110101 00110101 = 255 -- 3 bytes
 ```
+This means, technically, that numbers are strings. But they aren't numbers because \[PUTREASONHERE]
+
+#### Functions
+Functions have different keywords depending on what language you use:
+```yaml
+Python: 'def'
+JavaScript: 'function'
+Kotlin: 'fun'
+Rust: 'fn'
+```
+This may be confusing for new programmers that are looking over Ultilang code, this is our solution.
+
+```python
+thisisafunction foo&out& [ # we subsitiuted parentheses for 'and' symbols
+  system.console.stdout.out.log.output.print.here.new.newLine(openVariable(out))>:)
+  # `openVariable()` is called on function arguements 
+]
+callFunction(openVariable(foo))>:) # functions are also stored as files, and you call them using callFunction()
+```
+##### Note: Arguements are separated just like index's in UDSBECDTs, by their index number.
+
