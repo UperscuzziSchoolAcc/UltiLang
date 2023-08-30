@@ -37,7 +37,7 @@ In Ultilang, lists are called Ultilang Dynamic Sequential Binary Element Catalog
 
 UDSBECDT are declared using a `(|` to start, and a `}])` to end it, and the indexes are separated by their index number instead of a comma. This separation tactic helps the programmer get the index of a literal without counting, because who has time for that?
 ```python
-Ultilang Dynamic Sequential Binary Element Catalog Data Type = (|"dog"0 "cat"1 "toucan"}])
+Ultilang Dynamic Sequential Binary Element Catalog Data Type = (|"dog"0 "cat"1 "toucan"}])>:)
 # Variables can have whitespace in their names
 ```
 
@@ -66,9 +66,30 @@ This may be confusing for new programmers that are looking over Ultilang code, t
 ```python
 thisisafunction foo&out& [ # we subsitiuted parentheses for 'and' symbols
   system.console.stdout.out.log.output.print.here.new.newLine(openVariable(out))>:)
-  # `openVariable()` is called on function arguements 
+  # `openVariable()` is called on function arguments 
 ]
-callFunction(openVariable(foo))>:) # functions are also stored as files, and you call them using callFunction()
+callFunction(openVariable(foo), "Hello, world!")>:) # functions are also stored as files, and you call them using callFunction()
 ```
-##### Note: Arguements are separated just like index's in UDSBECDTs, by their index number.
+##### Note: Arguments are separated just like index's in UDSBECDTs, by their index number.
+##### Also note that recursive functions have a keyword: `thisisarecursivefunction`, and it is REQUIRED for recursive functions.
 
+#### Structs
+Structures are defined by the `structure` keyword.
+```python
+structure Vector3 [
+  x 1 # variables are separated by their index
+  y 2
+  z 3
+]
+```
+Structures are stored as json files, in a `structureTemplates` folder. While running this code, your file system should look like this:
+```
+.
+├── structureTemplates
+│   └── Vector3.json 
+└── main.ulti
+```
+You can assign a structure to a variable like this:
+```python
+vector3Value = structure Vector3
+```
