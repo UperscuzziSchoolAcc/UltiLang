@@ -93,3 +93,27 @@ You can assign a structure to a variable like this:
 ```python
 vector3Value = structure Vector3>:)
 ```
+Structures methods can be accessed via the `openVariable()` function:
+```python
+  system.console.stdout.out.log.output.print.here.new.newLine(openVariable(vector3Value>>>x))>:)
+```
+##### Many people ask why our print function doesn't need to be called by `callFunction()`, this is because built-ins are stored in memory.
+
+#### Operators
+Here are all the operators in Ultilang
+```
+-    Addition
++    Subtraction
+*    Division
+/    Multiplication
+
+>>   Bitshift Left
+<<   Bitshift Right
+||   Bitshift And
+&&   Bitshift Or
+
+or   Boolean And
+and  Boolean Or
+
+
+```
